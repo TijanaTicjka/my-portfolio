@@ -1,0 +1,57 @@
+.row{
+    background-color: rgb(27,30,39, 0.8);
+    min-height: 100vh;
+    color:rgb(251,251,251);
+    display: flex;
+    align-items: flex-start;
+    background-image: url("./top-view-person-writing-laptop-with-copy-space.jpeg");
+    background: linear-gradient(0deg, rgba(0, 0, 0.2, 0.6), rgba(0, 0, 0.2, 0.7)),
+            url("./top-view-person-writing-laptop-with-copy-space.jpeg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* .btn-outline-info {
+    border-width: 2px;
+    font-weight: 700;
+    --bs-btn-color:  rgb(218,165,32);
+    --bs-btn-border-color: rgb(251,251,251);
+    --bs-btn-hover-bg: rgb(218,165,32);
+    --bs-btn-hover-border-color:  rgb(218,165,32);
+    --bs-btn-active-bg:  rgb(218,165,32);
+    --bs-btn-active-border-color:  rgb(218,165,32);
+    --bs-btn-disabled-color:  rgb(218,165,32);
+    --bs-btn-active-color: rgb(251,251,251);
+    --bs-btn-hover-color:  rgb(251,251,251);
+} */
+
+h1 span {
+    color: rgb(218,165,32);
+}
+  
+.animate {
+    display: inline-block;
+    transform: translateY(50%);
+    transition: transform 1s ease;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+a{
+   color: rgb(251, 251, 251);
+}
+a:hover {
+   color: rgb(218, 165, 32);
+}
+p{
+    text-transform: capitalize;
+}
+
+  
+
+
+  
+  
+
+
