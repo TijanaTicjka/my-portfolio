@@ -14,7 +14,8 @@ export const Header = () => {
 
   const handleSelect = (key) => {
     setActiveKey(key);
-    navigate(`/${key}`);
+    console.log(activeKey);
+    navigate(`${key!== 'home' ?`/${key}`: `/`}`);
   };
 
   return (
