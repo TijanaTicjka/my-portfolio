@@ -19,7 +19,8 @@ export const Contact = () => {
     <Container fluid>
       <Row className='contact'>
         <Col md={{ span: 5}} className={animate ? 'animate-contact-info' : 'd-flex '}>
-            <p className='contact-info'>I'm excited to take on new challenges and projects. Feel free to browse my portfolio and get in touch!</p>
+            <p className='contact-info'>Thank you for taking the time to review my portfolio! I can’t wait to work on your projects and bring your vision to life.<span> Let's work together to make your projects a success!</span>
+            </p>
             <div className='icons'>
                 <div><FontAwesomeIcon icon={faSquarePhone} style={{ fontSize: '5.5em'}} /></div>
                 <a href="mailto:tijanamilenkovic13@ygmail.com"><FontAwesomeIcon icon={faEnvelope} style={{ fontSize: '5em' }}/></a>

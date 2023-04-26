@@ -50,6 +50,10 @@
     width: 100%;
     text-align: left;
 }
+span{
+    color: rgb(218, 165, 32);
+    font-weight: 800;
+}
 
 @media(min-width: 768px ) and (max-width: 1024){
     .animate-contact-info {
