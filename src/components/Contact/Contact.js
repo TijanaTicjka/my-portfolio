@@ -6,10 +6,7 @@ import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub,faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faMobilePhone } from '@fortawesome/free-solid-svg-icons';
 import { faSquarePhone } from '@fortawesome/free-solid-svg-icons';
-
-
 
 export const Contact = () => {
     const [animate, setAnimate] = useState(false);
@@ -26,14 +23,14 @@ export const Contact = () => {
             <div className='icons'>
                 <a><FontAwesomeIcon icon={faSquarePhone} style={{ fontSize: '5.5em'}} /></a>
                 <a href="mailto:tijanamilenkovic13@ygmail.com"><FontAwesomeIcon icon={faEnvelope} style={{ fontSize: '5em' }}/></a>
-                <a href="https://www.linkedin.com/in/tijana-milenkovic-b0402b205/" target="_blank"><FontAwesomeIcon icon={faLinkedin} style={{ fontSize: '5.5em' }}/></a>
-                 <a href="https://github.com/TijanaTicjka" target="_blank"><FontAwesomeIcon icon={faGithub} style={{ fontSize: '5em'}} /></a>
+                <a href="https://www.linkedin.com/in/tijana-milenkovic-b0402b205/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} style={{ fontSize: '5.5em' }}/></a>
+                 <a href="https://github.com/TijanaTicjka" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} style={{ fontSize: '5em'}} /></a>
             </div>
             <div className='links'>
                 <h5> +381 60 3530 096</h5>
                  <a href="mailto:tijanamilenkovic13@ygmail.com" className='link-contact'>tijanamilenkovic13@gmail.com </a>
-                <a href="https://github.com/TijanaTicjka" target="_blank" className='link-contact'>TijanaTicjka</a>
-                <a href="https://www.linkedin.com/in/tijana-milenkovic-b0402b205/" target="_blank" className='link-contact'>Tijana Milenković</a>
+                <a href="https://github.com/TijanaTicjka" target="_blank" className='link-contact'rel="noopener noreferrer">TijanaTicjka</a>
+                <a href="https://www.linkedin.com/in/tijana-milenkovic-b0402b205/" target="_blank" rel="noopener noreferrer" className='link-contact'>Tijana Milenković</a>
              </div>
         </Col>
       </Row>
