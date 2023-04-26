@@ -21,7 +21,7 @@ export const Contact = () => {
         <Col md={{ span: 5}} className={animate ? 'animate-contact-info' : 'd-flex '}>
             <p className='contact-info'>I'm excited to take on new challenges and projects. Feel free to browse my portfolio and get in touch!</p>
             <div className='icons'>
-                <a><FontAwesomeIcon icon={faSquarePhone} style={{ fontSize: '5.5em'}} /></a>
+                <div><FontAwesomeIcon icon={faSquarePhone} style={{ fontSize: '5.5em'}} /></div>
                 <a href="mailto:tijanamilenkovic13@ygmail.com"><FontAwesomeIcon icon={faEnvelope} style={{ fontSize: '5em' }}/></a>
                 <a href="https://www.linkedin.com/in/tijana-milenkovic-b0402b205/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} style={{ fontSize: '5.5em' }}/></a>
                  <a href="https://github.com/TijanaTicjka" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} style={{ fontSize: '5em'}} /></a>
