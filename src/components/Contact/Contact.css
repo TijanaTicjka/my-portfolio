@@ -1,0 +1,58 @@
+.contact {
+    background: linear-gradient(0deg, rgba(0, 0, 0.2, 0.6), rgba(0, 0, 0.2, 0.7)),
+            url(./contact-background.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.animate-contact-info {
+    display: flex;
+    transform: translateX(115%);
+    transition: transform 1.5s ease;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.link-contact{
+    padding-top: 1.7em;
+    width: 100%;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.icons{
+    display: flex;
+    width: 20%;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: left;
+}
+
+.links{
+    display: flex;
+    width: 65%;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 2em;
+}
+
+.links h5{
+    padding-top: 1.5em;
+    width: 100%;
+    font-weight: bold;
+    color: rgb(251,251,251);
+    cursor:default;
+}
+
+.contact-info{
+    width: 100%;
+    text-align: left;
+}
+
+@media(min-width: 768px ) and (max-width: 1024){
+    .animate-contact-info {
+        transform: translateX(50%);
+    };
+}

@@ -1,13 +1,17 @@
+.container-fluid {
+    background-color: rgb(29, 35, 51);
+}
+
 .row{
-    background-color: rgb(27,30,39, 0.8);
+    background-color: rgb(29, 35, 51);
+    _background-color: rgb(27,30,39, 0.8);
     min-height: 100vh;
     color:rgb(251,251,251);
     display: flex;
     align-items: flex-start;
-    background-image: url("./top-view-person-writing-laptop-with-copy-space.jpeg");
-    background: linear-gradient(0deg, rgba(0, 0, 0.2, 0.6), rgba(0, 0, 0.2, 0.7)),
-            url("./top-view-person-writing-laptop-with-copy-space.jpeg") no-repeat center center fixed;
-    background-size: cover;
+    background:linear-gradient(0deg, rgba(0, 0, 0.2, 0.3), rgba(0, 0, 0.2, 0.3)),
+    url(./profile.png) no-repeat center right fixed;
+        background-size: contain;
 }
 
 /* .btn-outline-info {
@@ -25,30 +29,37 @@
 } */
 
 h1 span {
-    color: rgb(218,165,32);
+    font-weight: 900;
+}
+
+h3{
+    color: rgb(218, 165, 32);
+    font-weight: 800;
 }
   
 .animate {
     display: inline-block;
-    transform: translateY(50%);
+    transform: translateY(70%);
     transition: transform 1s ease;
+    align-items: flex-start;
 }
+
 .social{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     gap: 2em;
 }
+
 a{
    color: rgb(251, 251, 251);
 }
 a:hover {
    color: rgb(218, 165, 32);
 }
-p{
-    text-transform: capitalize;
-}
 
-  
+p{
+    opacity: 0.7;
+}
 
 
   
