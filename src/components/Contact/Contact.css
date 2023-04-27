@@ -4,6 +4,9 @@
     background-size: cover;
     display: flex;
     align-items: center;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    min-height: 100vh;
 }
 
 .animate-contact-info {
@@ -40,7 +43,6 @@
 
 .links h5{
     padding-top: 1.5em;
-    width: 100%;
     font-weight: bold;
     color: rgb(251,251,251);
     cursor:default;
@@ -48,12 +50,15 @@
 
 .contact-info{
     width: 100%;
-    text-align: left;
+    text-align: center;
 }
-span{
+.span{
     color: rgb(218, 165, 32);
     font-weight: 800;
+    font-size: 1.5em;
+    text-align: center; 
 }
+
 
 @media(min-width: 768px ) and (max-width: 1024){
     .animate-contact-info {

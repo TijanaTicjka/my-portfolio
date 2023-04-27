@@ -1,17 +1,21 @@
 .container-fluid {
     background-color: rgb(29, 35, 51);
 }
-
-.row{
-    background-color: rgb(29, 35, 51);
+.row {
     _background-color: rgb(27,30,39, 0.8);
-    min-height: 100vh;
+    
     color:rgb(251,251,251);
     display: flex;
     align-items: flex-start;
+    
+}
+.home{
+    background-color: rgb(29, 35, 51);
+    _background-color: rgb(27,30,39, 0.8);
     background:linear-gradient(0deg, rgba(0, 0, 0.2, 0.3), rgba(0, 0, 0.2, 0.3)),
     url(./profile.png) no-repeat center right fixed;
         background-size: contain;
+    min-height: 100vh;
 }
 
 /* .btn-outline-info {

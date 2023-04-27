@@ -1,0 +1,106 @@
+.about h1{
+    color:black;
+    font-weight: 900;
+}
+
+.about span{
+    color:  rgb(218, 165, 32);
+}
+
+.photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 8px solid rgb(218, 165, 32);
+    width: 371px;
+    height: 450px;
+    position: relative;
+    margin-top: 4.5em;
+}
+
+.figure{
+    display: flex;
+    justify-content: space-between;
+    gap: 3em;
+    align-items:center;
+}
+
+.figure-caption{
+    display: flex;
+    justify-content: center;
+    color:black;
+    flex-direction: column;
+}
+
+.about{
+    background: radial-gradient(rgb(115, 252, 133) 0%, rgb(251, 251, 251) 0%, rgb(242, 242, 246) 100%);
+    justify-content: center;
+    gap: 2em;
+}
+
+.figure-icon{
+    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+    position: relative;
+    left: -30px;
+    margin-bottom: 5.5em;
+}
+
+.figures{
+    padding: 3em 1em;
+    _background-color: rgb(153, 153, 153);
+    background-color: rgb(251,251,251, 0.9)
+}
+
+.figures h1{
+    color: black;
+    font-weight: 900;
+}
+
+.figures span{
+    color: rgb(218, 165, 32);
+}
+
+.figure-skills{
+    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+    padding: 2em;
+    border-radius: 1.8em;
+}
+
+.description{
+    color:rgb(27,27,27);
+    justify-content: center;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+}
+.link-dark :hover{
+    color: rgb(218, 165, 32);
+}
+/* .btn-outline-info {
+    border-width: 2px;
+    font-weight: 700;
+    --bs-btn-color:  rgb(218,165,32);
+    --bs-btn-border-color: rgb(251,251,251);
+    --bs-btn-hover-bg: rgb(218,165,32);
+    --bs-btn-hover-border-color:  rgb(218,165,32);
+    --bs-btn-active-bg:  rgb(218,165,32);
+    --bs-btn-active-border-color:  rgb(218,165,32);
+    --bs-btn-disabled-color:  rgb(218,165,32);
+    --bs-btn-active-color: rgb(251,251,251);
+    --bs-btn-hover-color:  rgb(251,251,251);
+} */
+.btn-outline-info {
+    --bs-btn-color: rgb(251,251,251);
+    --bs-btn-border-color: rgb(218, 165, 32);
+    --bs-btn-bg: rgb(218, 165, 32);
+    --bs-btn-hover-color: rgb(218, 165, 32);
+    --bs-btn-hover-bg: transparent;
+    --bs-btn-hover-border-color:rgb(218, 165, 32);
+    --bs-btn-font-weight: 900;
+    --bs-btn-border-width: 3px;
+
+    
+
+}
+ 
