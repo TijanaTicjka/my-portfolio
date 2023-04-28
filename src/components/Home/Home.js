@@ -17,11 +17,11 @@ export const Home = () => {
   return (
     <Container fluid>
       <Row className='home'>
-        <Col md={{ span: 6, offset: 1}} className={animate ? 'animate' : 'd-flex '}>
+        <Col xs={{span:7, offset:1}} sm={{span:6, offset:1}} md={{span:6, offset:1}}lg={{span:6, offset: 1}}xl={{span:7, offset:1}} className={animate ? 'animate' : 'd-flex '}>
           <h5>Hello. My name is</h5>
           <h1><span> TIJANA MILENKOVIĆ</span>.</h1>
           <h3>Frontend Developer</h3>
-          <p>I'm excited to take on new challenges and projects. Feel free to browse my portfolio and get in touch!</p> 
+          <p>I'm deeply passionate about creating beautiful and functional websites.</p> <p>Feel free to browse my portfolio and get in touch!</p> 
           <div className='social mt-5'>
             <a href="https://github.com/TijanaTicjka" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} size="2xl" /></a>
             <a href="https://www.linkedin.com/in/tijana-milenkovic-b0402b205/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} size="2xl"/></a>

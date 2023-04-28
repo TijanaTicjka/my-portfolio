@@ -27,16 +27,11 @@
 }
 
 .figure-caption{
-    display: flex;
-    justify-content: center;
-    color:black;
     flex-direction: column;
 }
 
 .about{
     background: radial-gradient(rgb(115, 252, 133) 0%, rgb(251, 251, 251) 0%, rgb(242, 242, 246) 100%);
-    justify-content: center;
-    gap: 2em;
 }
 
 .figure-icon{
@@ -69,10 +64,10 @@
 
 .description{
     color:rgb(27,27,27);
-    justify-content: center;
+    /* justify-content: center;
     display: flex;
     align-self: center;
-    flex-direction: column;
+    flex-direction: column; */
 }
 .link-dark :hover{
     color: rgb(218, 165, 32);
@@ -102,5 +97,21 @@
 
     
 
+}
+@media(min-width: 320px ) and (max-width: 991px){
+    .figure-caption{
+        flex-direction: row;
+        padding-top: 2em;
+    }
+}
+
+@media(min-width: 280px ) and (max-width: 467px){
+    .img-fluid {
+        margin-left: 1em;
+    }
+    .photo{
+        width:300px;
+        height:380px;
+    }
 }
  

@@ -16,9 +16,9 @@ export const Contact = () => {
     }, []);
 
     return (
-    <Container fluid>
-      <Row className='contact'>
-        <Col md={{ span: 5}} className={animate ? 'animate-contact-info' : 'd-flex '}>
+      <Container fluid>
+        <Row className='contact'>
+          <Col md={{ span: 5}} className={animate ? 'animate-contact-info' : 'd-flex '}>
             <p className='contact-info'>Thank you for taking the time to review my portfolio! I can’t wait to work on your projects and bring your vision to life.</p>
             <h3 className='span'> Let's work together to make your projects a success!</h3>
             <div className='icons'>
@@ -33,9 +33,8 @@ export const Contact = () => {
                 <a href="https://github.com/TijanaTicjka" target="_blank" className='link-contact'rel="noopener noreferrer">TijanaTicjka</a>
                 <a href="https://www.linkedin.com/in/tijana-milenkovic-b0402b205/" target="_blank" rel="noopener noreferrer" className='link-contact'>tijana-milenkovic13</a>
              </div>
-        </Col>
-      </Row>
-    </Container>
+          </Col>
+        </Row>
+      </Container>
     )
-    
 }
