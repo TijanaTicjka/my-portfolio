@@ -1,9 +1,4 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import Offcanvas from 'react-bootstrap/Offcanvas';
-import Tab from 'react-bootstrap/Tab';
-import Tabs from 'react-bootstrap/Tabs';
+import { Container, Nav, Navbar, Offcanvas, Tab, Tabs } from 'react-bootstrap';
 import './Header.css';
 import { useNavigate } from 'react-router';
 import { useState } from 'react';
@@ -48,6 +43,7 @@ export const Header = () => {
     </>
   );
 }
+
 
 
 

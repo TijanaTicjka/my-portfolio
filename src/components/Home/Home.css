@@ -1,18 +1,20 @@
 .container-fluid {
     background-color: rgb(29, 35, 51);
 }
+
 .row {
     color:rgb(251,251,251);
     display: flex;
-    align-items: flex-start;
 }
 
 .home{
     background-color: rgb(29, 35, 51);
     background:linear-gradient(0deg, rgba(0, 0, 0.2, 0.3), rgba(0, 0, 0.2, 0.3)),
-    url(./profile.png) no-repeat center right fixed;
-        background-size: contain;
-    min-height: 100vh;
+    url(./profile.png) no-repeat center left fixed;
+    background-size: cover;
+    min-height: calc(100vh - 3.5em);
+    align-items: center;
+    padding-bottom: 5em;
 }
 
 h1 span {
@@ -26,9 +28,11 @@ h3{
   
 .animate {
     display: inline-block;
-    transform: translateY(45%);
+    transform: translateY(15%);
     transition: transform 1s ease;
     align-items: flex-start;
+    transform: translateY(25%);
+    padding-bottom: 10em;
 }
 
 .social{
@@ -47,59 +51,15 @@ a:hover {
 
 p{
     opacity: 0.7;
-    font-size: 1.2em;
 }
 
-@media(min-width: 1665px ) and (max-width: 2561px){
-   
-     .animate {
-        display: inline-block;
-        transform: translateY(55%);
-    }
-}
-
-@media(min-width: 1440px ) and (max-width: 1664px){
-
-     .animate {
-        display: inline-block;
-        transform: translateY(65%);
-    }
-}
-
-@media(min-width: 768px ) and (max-width: 1023px){
+@media only screen and (min-width: 768px) {
     .home{
-        background: linear-gradient(0deg, rgba(0, 0, 0.2, 0.3), rgba(0, 0, 0.2, 0.3)),
-        url(./profile.png) no-repeat center left fixed;
-        background-size: cover;
-    }
+        background-position: center right;
+        background-size: contain;
+   }
     .animate {
-        display: inline-block;
-        transform: translateY(45%);
-    }
-   
-}
-
-@media(min-width: 468px ) and (max-width: 767px){
-    .home{
-        background:linear-gradient(0deg, rgba(0, 0, 0.2, 0.3), rgba(0, 0, 0.2, 0.3)),
-        url(./profile.png) no-repeat center left fixed;
-        background-size: cover;
-    }
-    .animate {
-        display: inline-block;
-        transform: translateY(30%);
-    }
-}
-
-@media screen and (max-width: 467px){
-    .home{
-        background:linear-gradient(0deg, rgba(0, 0, 0.2, 0.3), rgba(0, 0, 0.2, 0.3)),
-        url(./profile.png) no-repeat center left fixed;
-        background-size: cover;
-    }
-
-    .animate {
-        display: inline-block;
-        transform: translateY(15%);
+        transform: translateY(25%);
+        padding-bottom: 10em;
     }
 }

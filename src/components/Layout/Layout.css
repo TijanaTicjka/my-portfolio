@@ -1,0 +1,5 @@
+.main{
+    display: flex;
+    min-height: fit-content;
+    flex-direction: column;
+}

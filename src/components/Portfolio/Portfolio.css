@@ -1,0 +1,38 @@
+.portfolio{
+    background: linear-gradient(360deg, rgb(75, 79, 86) 0%, rgb(24, 26, 29) 100%);
+}
+.project-image {
+    position: relative;
+    width: 200px;
+    filter: grayscale(0%);
+   
+   
+}
+
+.project-image:hover {
+    transition: filter 0.2s ease-in-out;
+    filter: grayscale(100%);
+    transform: scale(1.1);
+    color: red;
+
+}
+.project-image:hover .project-button {
+    filter: grayscale(0%);
+  }
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 1;
+    pointer-events: none; /* Allow hover events to pass through to the card image */
+}
+
+
