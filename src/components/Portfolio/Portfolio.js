@@ -1,4 +1,4 @@
-import { Container, Row, Col, Card, Figure, Button} from 'react-bootstrap';
+import { Container, Row, Col, Card} from 'react-bootstrap';
 import { useState} from 'react';
 import testPhoto from '../Images/testPhoto.jpeg'
 import './Portfolio.css';
