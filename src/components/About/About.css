@@ -43,12 +43,11 @@
 
 .figures{
     padding: 3em 1em;
-    _background-color: rgb(153, 153, 153);
-    background-color: rgb(251,251,251, 0.9)
+    background: radial-gradient(rgb(86, 85, 85) 0%, rgb(29, 35, 51) 100%);
 }
 
 .figures h1{
-    color: black;
+    color:rgb(251, 251, 251);
     font-weight: 900;
 }
 
@@ -56,35 +55,14 @@
     color: rgb(218, 165, 32);
 }
 
-.figure-skills{
-    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
-    padding: 2em;
-    border-radius: 1.8em;
-}
-
 .description{
     color:rgb(27,27,27);
-    /* justify-content: center;
-    display: flex;
-    align-self: center;
-    flex-direction: column; */
 }
+
 .link-dark :hover{
     color: rgb(218, 165, 32);
 }
-/* .btn-outline-info {
-    border-width: 2px;
-    font-weight: 700;
-    --bs-btn-color:  rgb(218,165,32);
-    --bs-btn-border-color: rgb(251,251,251);
-    --bs-btn-hover-bg: rgb(218,165,32);
-    --bs-btn-hover-border-color:  rgb(218,165,32);
-    --bs-btn-active-bg:  rgb(218,165,32);
-    --bs-btn-active-border-color:  rgb(218,165,32);
-    --bs-btn-disabled-color:  rgb(218,165,32);
-    --bs-btn-active-color: rgb(251,251,251);
-    --bs-btn-hover-color:  rgb(251,251,251);
-} */
+
 .btn-outline-info {
     --bs-btn-color: rgb(251,251,251);
     --bs-btn-border-color: rgb(218, 165, 32);
@@ -93,22 +71,18 @@
     --bs-btn-hover-bg: transparent;
     --bs-btn-hover-border-color:rgb(218, 165, 32);
     --bs-btn-font-weight: 900;
-    --bs-btn-border-width: 3px;
-
-    
-
+    --bs-btn-active-bg:rgb(251,251,251);
+    --bs-btn-active-color: rgb(218, 165, 32);
+    --bs-btn-active-border-color: rgb(218, 165, 32);
 }
+
 @media(min-width: 320px ) and (max-width: 991px){
     .figure-caption{
         flex-direction: row;
-        padding-top: 2em;
     }
 }
 
 @media(min-width: 280px ) and (max-width: 467px){
-    .img-fluid {
-        margin-left: 1em;
-    }
     .photo{
         width:300px;
         height:380px;

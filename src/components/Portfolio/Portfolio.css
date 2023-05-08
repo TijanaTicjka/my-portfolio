@@ -1,38 +1,65 @@
 .portfolio{
     background: linear-gradient(360deg, rgb(75, 79, 86) 0%, rgb(24, 26, 29) 100%);
+    min-height: calc(100vh - 3em);
 }
-.project-image {
+
+.portfolio h1{
+  color: rgb(251, 251, 251);
+  font-weight: 900;
+}
+
+.portfolio span{
+  color: rgb(218, 165, 32);
+}
+
+.card-title{
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+.card {
     position: relative;
-    width: 200px;
-    filter: grayscale(0%);
-   
-   
+    overflow: hidden;
+    width: 23em;
 }
 
-.project-image:hover {
-    transition: filter 0.2s ease-in-out;
-    filter: grayscale(100%);
-    transform: scale(1.1);
-    color: red;
-
-}
-.project-image:hover .project-button {
-    filter: grayscale(0%);
-  }
-.card-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.card:hover .card-overlay {
+    display: block;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+}
+  
+.card-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
     text-align: center;
-    background-color: rgba(0,0,0,0.6);
-    z-index: 1;
-    pointer-events: none; /* Allow hover events to pass through to the card image */
+    color: #fff;
 }
 
+.animate-projects {
+    opacity: 0;
+    transform: translateY(0);
+}
 
+.card-button{
+    --bs-btn-active-bg: rgb(251, 251, 251);
+    --bs-btn-active-color: rgb(218, 165, 32);
+    --bs-btn-active-border-color: rgb(251, 251, 251);
+}
+  
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+  
+.animate-enter {
+  animation: fadeIn 5s forwards;
+}

@@ -15,7 +15,7 @@ export const Home = () => {
   return (
     <Container fluid>
       <Row className='home'>
-        <Col xs={{span:7, offset:1}} className={animate ? 'animate' : 'd-flex '}>
+        <Col xs={{span:7, offset:1}} className={animate ? 'animate' : ''}>
           <h5>Hello. My name is</h5>
           <h1><span> TIJANA MILENKOVIĆ</span>.</h1>
           <h3>Frontend Developer</h3>
