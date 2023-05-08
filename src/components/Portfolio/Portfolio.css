@@ -21,6 +21,8 @@
     position: relative;
     overflow: hidden;
     width: 23em;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(251,251,251);
 }
 
 .card:hover .card-overlay {

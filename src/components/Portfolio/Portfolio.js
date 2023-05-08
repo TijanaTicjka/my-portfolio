@@ -13,7 +13,7 @@ export const Portfolio = () => {
   const [hoveredCardIndex, setHoveredCardIndex] = useState(null);
   const [animate, setAnimate] = useState(false); 
 
-  const projects = [[image1, "Interview reports", "https://tijanamilenkovic-interview-reports.netlify.app/","https://github.com/TijanaTicjka/interview-reports.git"],[image2, "Marvel Heroes","https://tijanamilenkovic-marvel-heroes-team.netlify.app/","https://github.com/TijanaTicjka/marvel-heroes-team.git"],[image3, "Bit Show","https://tijanamilenkovic-bit-show.netlify.app/","https://github.com/TijanaTicjka/bit-show.git"],[image4, "Rick and Morty","https://tijanamilenkovic-rick-and-morty.netlify.app/","https://github.com/TijanaTicjka/rick-and-morty.git"],[image5, "Giphy Searcher","https://tijanamilenkovic-giphy-searcher.netlify.app/","https://github.com/TijanaTicjka/giphy-searcher.git"],[image6, "Exam statistics","https://tijanamilenkovic-exam-statistics.netlify.app/","https://github.com/TijanaTicjka/exam-statistics.git"]]
+  const projects = [[image1, "Interview Reports", "https://tijanamilenkovic-interview-reports.netlify.app/","https://github.com/TijanaTicjka/interview-reports.git"],[image2, "Marvel Heroes","https://tijanamilenkovic-marvel-heroes-team.netlify.app/","https://github.com/TijanaTicjka/marvel-heroes-team.git"],[image3, "Bit Show","https://tijanamilenkovic-bit-show.netlify.app/","https://github.com/TijanaTicjka/bit-show.git"],[image4, "Rick And Morty","https://tijanamilenkovic-rick-and-morty.netlify.app/","https://github.com/TijanaTicjka/rick-and-morty.git"],[image5, "Giphy Searcher","https://tijanamilenkovic-giphy-searcher.netlify.app/","https://github.com/TijanaTicjka/giphy-searcher.git"],[image6, "Exam Statistics","https://tijanamilenkovic-exam-statistics.netlify.app/","https://github.com/TijanaTicjka/exam-statistics.git"]]
 
   const handleEnter = (index) => {
     setHoveredCardIndex(index);
@@ -33,7 +33,7 @@ export const Portfolio = () => {
         <h1 className="text-center m-3 p-3">
           MY <span>PROJECTS</span>
         </h1>
-        <Col className="d-flex justify-content-center flex-wrap gap-2 pb-5">
+        <Col className="d-flex justify-content-center flex-wrap gap-3 pb-5">
           {projects.map((e, index) => (
             <Card 
               key={index}
