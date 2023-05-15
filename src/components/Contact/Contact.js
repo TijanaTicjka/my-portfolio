@@ -26,13 +26,12 @@ export const Contact = () => {
             <a href="mailto:tijanamilenkovic13@gmail.com"><FontAwesomeIcon icon={faEnvelope} style={{ fontSize: '4em' }}/></a>
             <a href="https://www.linkedin.com/in/tijana-milenkovic-b0402b205/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} style={{ fontSize: '4.4em' }}/></a>
             <a href="https://github.com/TijanaTicjka" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} style={{ fontSize: '4em'}} /></a>
-         
           </div>
           <div className='links'>
             <h5> +381 60 3530 096</h5>
             <a href="mailto:tijanamilenkovic13@gmail.com" className='link-contact'>tijanamilenkovic13@gmail.com </a>
-            <a href="https://github.com/TijanaTicjka" target="_blank" className='link-contact'rel="noopener noreferrer">TijanaTicjka</a>
-            <a href="https://www.linkedin.com/in/tijana-milenkovic-b0402b205/" target="_blank" rel="noopener noreferrer" className='link-contact'>tijana-milenkovic13</a>
+            <a href="https://www.linkedin.com/in/tijana-milenkovic-b0402b205/"target="_blank" className='link-contact'rel="noopener noreferrer">tijana-milenkovic13</a>
+            <a href="https://github.com/TijanaTicjka" target="_blank" rel="noopener noreferrer" className='link-contact'>TijanaTicjka</a>
           </div>
           </div>
         </Col>
