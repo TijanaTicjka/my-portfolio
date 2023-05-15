@@ -44,7 +44,7 @@ export const About = () => {
           <p>My love of frontend development comes from my appreciation for design, coding, and problem-solving.I'm always eager to learn and grow as a developer and be a dedicated developer as a part of team.</p>
           <p> Thank you for considering me for your next project. Feel free to download my CV below to learn more about my skills and experience.</p>
           <div className='mt-3 d-flex justify-content-left col-12'>
-            <a href={require("./assets/CV_TijanaMilenkovic.pdf")} download>
+            <a href={require("./assets/CV_TijanaMilenković.pdf")} download>
             <Button variant="outline-info" size="m" >Download CV</Button></a>
           </div>
         </Col>
