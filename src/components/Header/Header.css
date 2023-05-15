@@ -12,13 +12,8 @@
     background-color: rgb(33,37,41);
 }
 
-
-
-
 @media only screen and (max-width: 575px) {
     .offcanvas {
-            _background-color: rgb(33, 37, 41);
-            _background-color: rgb(218, 165, 32);
             color: rgb(153, 156, 163);
             background: linear-gradient(0deg, rgba(0, 0, 0.2, 0.9), rgba(0, 0, 0.2, 0.7))
         }
@@ -30,9 +25,18 @@
         }
     
         .nav-tabs .nav-link.active {
-            background-color: rgb(33, 37, 41);
+            background-color: rgb(33 37 41 / 0%);
         }
-    
+        .nav-tabs .nav-link{
+            border: none;
+        }
+        .nav-tabs{
+            
+            border-bottom: none;
+        }
+        .offcanvas{
+            --bs-offcanvas-width: 100%;
+        }
 }
    
 

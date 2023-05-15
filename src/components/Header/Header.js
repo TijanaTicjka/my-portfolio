@@ -5,35 +5,42 @@ import { useState } from 'react';
 
 export const Header = () => {
   const [activeKey, setActiveKey] = useState('home');
+  const [showOffcanvas, setShowOffcanvas] = useState(false);
   const navigate = useNavigate();
 
   const handleSelect = (key) => {
     setActiveKey(key);
-    console.log(activeKey);
-    navigate(`${key!== 'home' ? `/${key}` : `/`}`);
+    navigate(`${key !== 'home' ? `/${key}` : `/`}`);
+    if (showOffcanvas) {
+      setShowOffcanvas(false);
+    }
+  };
+
+  const handleToggleOffcanvas = () => {
+    setShowOffcanvas((prevShowOffcanvas) => !prevShowOffcanvas);
   };
 
   return (
     <>
-      <Navbar  bg="dark" variant="dark" expand="sm">
+      <Navbar bg="dark" variant="dark" expand="sm">
         <Container fluid>
-          <Navbar.Brand/>
-          <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-sm`} />
+          <Navbar.Brand />
+          <Navbar.Toggle aria-controls="offcanvasNavbar-expand-sm" onClick={handleToggleOffcanvas} />
           <Navbar.Offcanvas
-            id={`offcanvasNavbar-expand-sm`}
-            aria-labelledby={`offcanvasNavbarLabel-expand-sm`}
+            id="offcanvasNavbar-expand-sm"
+            aria-labelledby="offcanvasNavbarLabel-expand-sm"
             placement="end"
+            show={showOffcanvas}
+            onHide={() => setShowOffcanvas(false)}
           >
-            <Offcanvas.Header closeButton/>
+            <Offcanvas.Header closeButton />
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Tabs activeKey={activeKey} onSelect={handleSelect}
-                  id="uncontrolled-tab-example"
-                >
-                  <Tab eventKey="home" title="HOME"/>
-                  <Tab eventKey="about" title="ABOUT"/>
-                  <Tab eventKey="portfolio" title="PORTFOLIO"/>
-                  <Tab eventKey="contact" title="CONTACT"/>
+                <Tabs activeKey={activeKey} onSelect={handleSelect} id="uncontrolled-tab-example">
+                  <Tab eventKey="home" title="HOME" />
+                  <Tab eventKey="about" title="ABOUT" />
+                  <Tab eventKey="portfolio" title="PORTFOLIO" />
+                  <Tab eventKey="contact" title="CONTACT" />
                 </Tabs>
               </Nav>
             </Offcanvas.Body>
@@ -42,17 +49,4 @@ export const Header = () => {
       </Navbar>
     </>
   );
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
+};

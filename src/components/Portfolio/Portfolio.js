@@ -42,7 +42,7 @@ export const Portfolio = () => {
               className={`${
                 animate ? 'animate-projects animate-enter' : ''
               } ${hoveredCardIndex === index ? 'hovered' : ''}`}
-              style={{ transitionDelay: `${index * 100}ms` }}
+              style={{ transitionDelay: `${index * 900}ms` }}
             >
               <Card.Img src={e[0]} alt="project" />
               <div className="card-overlay">

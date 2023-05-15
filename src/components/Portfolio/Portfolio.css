@@ -1,58 +1,59 @@
-.portfolio{
-    background: linear-gradient(360deg, rgb(75, 79, 86) 0%, rgb(24, 26, 29) 100%);
-    min-height: calc(100vh - 3em);
+.portfolio {
+  background: linear-gradient(360deg, rgb(75, 79, 86) 0%, rgb(24, 26, 29) 100%);
+  min-height: calc(100vh - 3em);
 }
 
-.portfolio h1{
+.portfolio h1 {
   color: rgb(251, 251, 251);
   font-weight: 900;
 }
 
-.portfolio span{
+.portfolio span {
   color: rgb(218, 165, 32);
 }
 
-.card-title{
+.card-title {
   font-size: 1.5em;
   font-weight: 900;
 }
 
 .card {
-    position: relative;
-    overflow: hidden;
-    width: 23em;
-    background-color: rgba(0, 0, 0, 0.1);
-    border: 1px solid rgb(251,251,251);
+  position: relative;
+  overflow: hidden;
+  width: 23em;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(251, 251, 251);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .card:hover .card-overlay {
-    display: block;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
 }
-  
+
 .card-overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: none;
-    text-align: center;
-    color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  transition: opacity 0.3s;
 }
 
-.animate-projects {
-    opacity: 0;
-    transform: translateY(0);
+.card-button {
+  --bs-btn-active-bg: rgb(251, 251, 251);
+  --bs-btn-active-color: rgb(218, 165, 32);
+  --bs-btn-active-border-color: rgb(251, 251, 251);
 }
 
-.card-button{
-    --bs-btn-active-bg: rgb(251, 251, 251);
-    --bs-btn-active-color: rgb(218, 165, 32);
-    --bs-btn-active-border-color: rgb(251, 251, 251);
-}
-  
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -61,7 +62,11 @@
     opacity: 1;
   }
 }
-  
+
+.animate-projects {
+  opacity: 0;
+}
+
 .animate-enter {
-  animation: fadeIn 5s forwards;
+  animation: fadeIn 0.5s forwards;
 }
